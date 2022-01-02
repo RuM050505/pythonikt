@@ -27,5 +27,49 @@
                 <a href="algoritmus.html">Algoritmusok</a>
             </li>
         </ol>
+        <p style="position: absolute; left: 470px; top: 120px;">
+            <span style="font-size: 26px; font-weight: 600; text-decoration:underline">Feltételes utasítások</span> <br>
+            &nbsp Feltételeket az 'if' 'elif' és 'else' parancsokkal lehet készíteni <br>
+            <div id="code" class="code" style="position: absolute; left: 470px; top: 200px;">
+                x = <span style="color: #9876AA;">int</span>(<span style="color: #9876AA;">input</span>(<span style="color: #6A8759;">''</span>)) <br>
+                y = <span style="color: #9876AA;">int</span>(<span style="color: #9876AA;">input</span>(<span style="color: #6A8759;">''</span>)) <br>
+                <span style="color: #CC7832;">if</span> x > y: <br>
+                &nbsp &nbsp<span style="color: #9876AA;">print</span>(x<span style="color: #CC7832;">,</span> <span style="color: #6A8759;">'nagyobb mint'</span><span style="color: #CC7832;">,</span> y) <span style="color: #6A8759;">#A feltétel után mindig írni kell ':'-ot, beljebb kell írni azt, amit #akkor szeretnénk hogy lefusson, ha az állítás igaz</span> <br>
+                <span style="color: #CC7832;">elif</span> x == y: <br>
+                &nbsp &nbsp<span style="color: #9876AA;">print</span>(<span style="color: #6A8759;">'A két szám egyenlő'</span>) <span style="color: #6A8759;">#Az elif csak akkor futhat le, ha igaz, és az előtte lévő állítás #hamis. Elif csak if után írható, akármennyi elif használható egymás után</span> <br>
+                <span style="color: #CC7832;">else</span>: <span style="color: #6A8759;">#Az else-nek nem kell feltételt megadni, mindig lefut, ha előtte minden állítás hamis</span><br>
+                &nbsp &nbsp<span style="color: #9876AA;">print</span>(y<span style="color: #CC7832;">,</span> <span style="color: #6A8759;">'nagyobb mint'</span><span style="color: #CC7832;">,</span> x) <span style="color: #6A8759;"></span>
+            </div>
+        </p>
+        <p style="position: absolute; left: 470px; top: 414px;">
+            &nbsp Logikai kifejezések <br>
+            ==	egyenlő <br>
+            !=	nem egyenlő <br>
+            <	kisebb <br>
+            >	nagyobb <br>
+            <=	kisebb vagy egyenlő <br>
+            >=	nagyobb vagy egyenlő <br> <br>
+            &nbsp Logikai operátorok <br>
+            and	és <br>
+            or	vagy <br>
+            not	nem <br>
+            <div id="code" class="code" style="position: absolute; left: 470px; top: 714px;">
+                <span style="color: #CC7832;">if</span> x < 0 <span style="color: #CC7832;">or</span> y < 0: <br>
+                &nbsp &nbsp<span style="color: #9876AA;">print</span>(<span style="color: #6A8759;">'Mindkét szám negatív'</span>) <span style="color: #6A8759;"></span> <br> <br>
+                <span style="color: #CC7832;">if not</span> x == y: <br>
+                &nbsp &nbsp<span style="color: #9876AA;">print</span>(<span style="color: #6A8759;">'A két szám egyenlő'</span>) <span style="color: #6A8759;"></span> <br> <br>
+                <span style="color: #CC7832;">if</span> x > 4 <span style="color: #CC7832;">and</span> y < 6: <br>
+                &nbsp &nbsp<span style="color: #9876AA;">print</span>(<span style="color: #6A8759;">'Mind a két szám 5'</span>) <span style="color: #6A8759;"></span> <br>
+            </div>
+        </p>
+        <p style="position: absolute; left: 470px; top: 890px;">
+            <span style="font-size: 26px; font-weight: 600; text-decoration:underline">Véletlen számok</span> <br>
+            <div id="code" class="code" style="position: absolute; left: 470px; top: 948px;">
+                <span style="color: #CC7832;">import </span>random <span style="color: #6A8759;">#Importálja a "random" könyvtárat</span> <br> <br>
+                randszam = random.randint(<span style="color: #6897BB;">0</span><span style="color: #CC7832;">,</span> <span style="color: #6897BB;">10</span>)
+                <span style="color: #9876AA;">print</span>(randszam) <br>
+                <span style="color: #6A8759;">#Kiír egy random számot 0 és 10 között (felső és alsó érték is lehet)</span> <br>
+            </div>
+        </p>
     </body>
 </html>
