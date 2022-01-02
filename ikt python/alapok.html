@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="py.css">
+        <title>
+            Python - Alapok
+        </title>
+    </head>
+    <body>
+        <h1>Üdvözöllek a weboldalon!</h1>
+        <a href="index.html"><img src="pythonlogo.jpg" id="kep" style="position: relative; left: 44px; top: -30px;"></a>
+        <ol style="position: absolute; left: 20px; top: 350px;">
+            <li>
+                <a href="alapok.html">Alapok</a>
+            </li>
+            <li>
+                <a href="elagazas.html">Elágazások</a>
+            </li>
+            <li>
+                <a href="ciklus.html">Ciklusok</a>
+            </li>
+            <li>
+                <a href="lista.html">Listák</a>
+            </li>
+            <li>
+                <a href="algoritmus.html">Algoritmusok</a>
+            </li>
+        </ol>
+        <p style="position: absolute; left: 470px; top: 120px;">
+            <span style="font-size: 26px; font-weight: 600; text-decoration:underline">Megjegyzések</span> <br>
+            &nbsp Megjegyzéseket két féle képpen lehet csinálni <br>
+            &nbsp Az egyik mód, ha a sor elején egy "#" jelet használunk, 
+        </p>
+            <div id="code" class="code" style="position: absolute; left: 470px; top: 220px;">
+                <span style="color: #6A8759;">#Ez egy megjegyzés</span> <br>
+                <span style="color: #9876AA;">print</span><span style="color: white;">(</span><span style="color: #6A8759;">"Valami"</span><span style="color: white;">)</span> <br>
+                <span style="color: #6A8759;">#Lehet akár több sorban is használni</span>
+            </div>
+        <p style="position: absolute; left: 470px; top: 300px;">
+            &nbsp Vagy többsoros megjegyzésnél """ használunk. <br>
+            <div id="code" class="code" style="position: absolute; left: 470px; top: 348px;">
+                <span style="color: #6A8759;">"""Ez egy <br>
+                több soros <br>
+                megjegyzés""" <br></span>
+                <span style="color: #9876AA;">print</span><span style="color: white;">(</span><span style="color: #6A8759;">"Valami"</span><span style="color: white;">)</span>
+            </div>
+        </p>
+        <p style="position: absolute; left: 470px; top: 450px;">
+            &nbsp Ha egy kódrészletet megjegyzésbe teszünk, megakadályozza azon sornak futtatását
+            <div id="code" class="code" style="position: absolute; left: 470px; top: 498px;">
+                <span style="color: #9876AA;">print</span><span style="color: white;">(</span><span style="color: #6A8759;">"Valami"</span><span style="color: white;">)</span> <br>
+                <span style="color: #6A8759;">#print("Ez a sor nem fog lefutni")</span>
+            </div>
+        </p>
+        <p style="position: absolute; left: 470px; top: 570px;">
+            <span style="font-size: 26px; font-weight: 600; text-decoration:underline">Változók</span> <br>
+            &nbsp Változó értékének megadása és kiírása
+            <div id="code" class="code" style="position: absolute; left: 470px; top: 646px;">
+                <span style="color: white;">x =</span> <span style="color: #6897BB;">5</span> <br>
+                <span style="color: white;">y =</span> <span style="color: #9876AA;">input</span><span style="color: white;">(</span><span style="color: #6A8759;">"Add meg az y értékét"</span><span style="color: white;">)</span> <br>
+                <span style="color: white;">z =</span> <span style="color: #6A8759;">'szavak'</span> <br> <br>
+                <span style="color: #9876AA;">print</span>(x) <br>
+                <span style="color: #9876AA;">print</span>(y) <br>
+                <span style="color: #9876AA;">print</span>(z) <br>
+                <span style="color: #9876AA;">print</span><span style="color: white;">(x</span><span style="color: #CC7832;">,</span> <span style="color: white;">y</span><span style="color: #CC7832;">,</span> z)     <span style="color: #6A8759;">#Egyszerre több változót is ki lehet iratni, de vesszővel el kell őket választani</span> <br>
+            </div>
+        </p>
+        <p style="position: absolute; left: 470px; top: 820px;">
+            &nbsp A változók különboző adattípusok lehetnek
+            <div id="code" class="code" style="position: absolute; left: 470px; top: 866px;">
+                <span style="color: #6A8759;">#Az int (integer) egész számokat tárol</span> <br>
+                szam = <span style="color: #6897BB;">5</span> <br>
+                <span style="color: #9876AA;">print</span>(<span style="color: #9876AA;">type</span>(szam))     <span style="color: #6A8759;">#Ez a parancs kiírja, milyen típusú a változó</span> <br> <br>
+                <span style="color: #6A8759;">#A float már nem egész számokat is tud tárolni</span> <br>
+                float_szam = <span style="color: #6897BB;">3.66</span> <br>
+                <span style="color: #9876AA;">print</span>(<span style="color: #9876AA;">type</span>(float_szam)) <br> <br>
+                <span style="color: #6A8759;">#Az str (string) szöveget tárol</span> <br>
+                szoveg = <span style="color: #6A8759;">'kek'</span> <br>
+                <span style="color: #9876AA;">print</span>(<span style="color: #9876AA;">type</span>(szoveg)) <br> <br>
+                <span style="color: #6A8759;">#A boolean igaz vagy hamis értéket tárol</span> <br>
+                igaz = <span style="color: #CC7832;">True</span> <br>
+                hamis = <span style="color: #CC7832;">False</span> <br>
+                <span style="color: #9876AA;">print</span>(<span style="color: #9876AA;">type</span>(igaz))
+            </div>
+        </p>
+        <p style="position: absolute; left: 470px; top: 1200px;">
+            <span style="font-size: 26px; font-weight: 600; text-decoration:underline">Műveletek</span> <br>
+            &nbsp Számok bekérésénél figyelni kell arra, hogy az input parancs mindig stringet vesz be, <br>
+            &nbsp ezért át kell alakítani számmá, ha matematikai műveleteket szeretnénk velük végezni
+            <div id="code" class="code" style="position: absolute; left: 470px; top: 1300px;">
+                x = <span style="color: #9876AA;">int</span>(<span style="color: #9876AA;">input</span>(<span style="color: #6A8759;">''</span>)) <br>
+                <span style="color: #6A8759;">#VAGY</span> <br>
+                y = <span style="color: #9876AA;">input</span>(<span style="color: #6A8759;">''</span>) <br>
+                y = <span style="color: #9876AA;">int</span>(y)
+            </div>
+        </p>
+        <p style="position: absolute; left: 470px; top: 1400px;">
+            &nbsp Matematikai műveletek
+            <div id="code" class="code" style="position: absolute; left: 470px; top: 1448px;">
+                x = <span style="color: #6897BB;">10</span> <br>
+                y = <span style="color: #6897BB;">20</span> <br> <br>
+                <span style="color: #6A8759;">#összeadás</span> <br>
+                <span style="color: #9876AA;">print</span>(x + y) <br>
+                z = x + y
+                <span style="color: #9876AA;">print</span>(z) <span style="color: #6A8759;">#Ugyan azt csinálja mint az első sor, csak felveszi változóként is</span> <br> <br>
+                <span style="color: #6A8759;">#kivonás</span> <br>
+                <span style="color: #9876AA;">print</span>(<span style="color: #6A8759;">'A két szám különsége:'</span><span style="color: #CC7832;">,</span> x - y) <span style="color: #6A8759;">#A változó elé, és után is lehet írni más változókat, vagy #szöveget, ha vesszővel választjuk el őket, a program tenni fog szóközt</span> <br> <br>
+                <span style="color: #6A8759;">#szorzás</span> <br>
+                <span style="color: #9876AA;">print</span>(x * y) <br> <br>
+                <span style="color: #6A8759;">#osztás</span> <br>
+                <span style="color: #9876AA;">print</span>(x / y) <br> <br>
+                <span style="color: #6A8759;">#maradékos osztás (csak a maradékot írja ki)</span> <br>
+                <span style="color: #9876AA;">print</span>(x % y)
+            </div>
+        </p>
+        <p style="position: absolute; left: 470px; top: 1832px;">
+            &nbsp Stringek összecsatolása
+            <div id="code" class="code" style="position: absolute; left: 470px; top: 1880px;">
+                szo1 = <span style="color: #6A8759;">'alma'</span> <br>
+                szo2 = <span style="color: #6A8759;">'fa'</span> <br>
+                <span style="color: #6A8759;">#Stringek összekapcsolásakos a '+' jel szóköz nélkül írja ki, a ',' szóközzel elválasztva </span> <br>
+                <span style="color: #9876AA;">print</span>(szo1 + szo2) <br>
+                <span style="color: #9876AA;">print</span>(szo1, szo2) <br>
+            </div>
+        </p>
+    </body>
+</html>
