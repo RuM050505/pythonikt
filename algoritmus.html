@@ -27,5 +27,70 @@
                 <a href="algoritmus.html">Algoritmusok</a>
             </li>
         </ol>
+        <p style="position: absolute; left: 470px; top: 120px;">
+            <span style="font-size: 26px; font-weight: 600; text-decoration:underline">Alapvető algoritmusok</span> <br>
+            <div id="code" class="code" style="position: absolute; left: 470px; top: 174px;">
+                <span style="color: #6A8759;">#Ez a program kiszámolja az átlagodat</span> <br>
+                darab = <span style="color: #6897BB;">0</span> <br>
+                osszeg = <span style="color: #6897BB;">0</span> <br>
+                <span style="color: #CC7832;">while True</span>: <br>
+                &nbsp &nbsp jegy = <span style="color: #9876AA;">input</span>(<span style="color: #6A8759;">'Adj meg egy jegyet, a befejezéshez írj be egy 0-át!'</span>) <br>
+                &nbsp &nbsp <span style="color: #CC7832;">if </span> jegy == <span style="color: #6897BB;">0</span>: <br>
+                &nbsp &nbsp &nbsp &nbsp <span style="color: #CC7832;">break</span> <br>
+                &nbsp &nbsp <span style="color: #CC7832;">else</span>: <br>
+                &nbsp &nbsp &nbsp &nbsp darab = darab + <span style="color: #6897BB;">1</span> <br>
+                &nbsp &nbsp &nbsp &nbsp osszeg = osszeg + jegy <br>
+                <span style="color: #CC7832;">if </span> darab != <span style="color: #6897BB;">0</span>: <br>
+                &nbsp &nbsp <span style="color: #9876AA;">print</span>(<span style="color: #6A8759;">'A jegyeid átlaga:'</span><span style="color: #CC7832;">, </span> osszeg / darab) <br> <br>
+            </div>
+            <div id="code" class="code" style="position: absolute; left: 470px; top: 466px;">
+                <span style="color: #6A8759;">#Számlálás</span> <br>
+                <span style="color: #6A8759;">#Ez a program megszámolja hány páros szám van a listában</span> <br>
+                lista = [<span style="color: #6897BB;">1</span><span style="color: #CC7832;">,</span> <span style="color: #6897BB;">3</span><span style="color: #CC7832;">,</span> <span style="color: #6897BB;">5</span><span style="color: #CC7832;">,</span> <span style="color: #6897BB;">42</span><span style="color: #CC7832;">,</span> <span style="color: #6897BB;">10</span><span style="color: #CC7832;">,</span> <span style="color: #6897BB;">6</span><span style="color: #CC7832;">,</span> <span style="color: #6897BB;">23</span>] <br>
+                darab = <span style="color: #6897BB;">0</span> <br>
+                <span style="color: #CC7832;">for </span>szam <span style="color: #CC7832;">in </span>lista: <br>
+                &nbsp &nbsp <span style="color: #CC7832;">if </span>szam % <span style="color: #6897BB;">2</span> == <span style="color: #6897BB;">0</span>: <br>
+                &nbsp &nbsp &nbsp &nbsp darab = darab + <span style="color: #6897BB;">1</span> <br>
+                <span style="color: #9876AA;">print</span>(<span style="color: #6A8759;">'A listában lévő páros számok: '</span><span style="color: #CC7832;">,</span> darab) <br>
+            </div>
+            <div id="code" class="code" style="position: absolute; left: 470px; top: 664px;">
+                <span style="color: #6A8759;">#Szélsőérték meghatározása</span> <br>
+                <span style="color: #6A8759;">#Ez a program megadja a listában lévő legkisebb és legnagyobb számokat</span> <br>
+                lista = [<span style="color: #6897BB;">1</span><span style="color: #CC7832;">,</span> <span style="color: #6897BB;">3</span><span style="color: #CC7832;">,</span> <span style="color: #6897BB;">5</span><span style="color: #CC7832;">,</span> <span style="color: #6897BB;">42</span><span style="color: #CC7832;">,</span> <span style="color: #6897BB;">10</span><span style="color: #CC7832;">,</span> <span style="color: #6897BB;">6</span><span style="color: #CC7832;">,</span> <span style="color: #6897BB;">23</span>] <br>
+                min = lista[<span style="color: #6897BB;">0</span>] <br>
+                max = lista[<span style="color: #6897BB;">0</span>] <br>
+                <span style="color: #CC7832;">for </span>szam <span style="color: #CC7832;">in </span>lista: <br>
+                &nbsp &nbsp <span style="color: #CC7832;">if </span> szam < min: <br>
+                &nbsp &nbsp &nbsp &nbsp min = szam <br>
+                &nbsp &nbsp <span style="color: #CC7832;">if </span> szam > max: <br>
+                &nbsp &nbsp &nbsp &nbsp max = szam <br>
+                <span style="color: #9876AA;">print</span>(<span style="color: #6A8759;">'A listában lévő legkisebb szám: '</span><span style="color: #CC7832;">,</span> min) <br>
+                <span style="color: #9876AA;">print</span>(<span style="color: #6A8759;">'A listában lévő legnagyobb szám: '</span><span style="color: #CC7832;">,</span> max) <br>
+            </div>
+        </p>
+        <p style="position: absolute; left: 470px; top: 912px;">
+            <span style="font-size: 26px; font-weight: 600; text-decoration:underline">Eljárások</span> <br>
+            <div id="code" class="code" style="position: absolute; left: 470px; top: 966px;">
+                <span style="color: #6A8759;">#A eljárás a kódban akárhonnan, akárhányszor használható</span> <br>
+                <span style="color: #CC7832;">def </span><span style="color: #FFC66D;">osszead</span>(x<span style="color: #CC7832;">,</span> y): <br>
+                &nbsp &nbsp osszeg = x + y <br>
+                &nbsp &nbsp <span style="color: #9876AA;">print</span>(<span style="color: #6A8759;">'A két szám összege: '</span></span><span style="color: #CC7832;">,</span> osszeg) <br> <br> <br>
+                osszead(<span style="color: #6897BB;">4</span><span style="color: #CC7832;">,</span><span style="color: #6897BB;">6</span>) <span style="color: #6A8759;">#A két számot fogja x és y változóként használni</span> <br>
+                osszead(<span style="color: #6897BB;">8</span><span style="color: #CC7832;">,</span><span style="color: #6897BB;">7</span>) <br>
+            </div>
+        </p>
+        <p style="position: absolute; left: 470px; top: 1138px;">
+            <span style="font-size: 26px; font-weight: 600; text-decoration:underline">Függvények</span> <br>
+            <div id="code" class="code" style="position: absolute; left: 470px; top: 1192px;">
+                <span style="color: #6A8759;">#Ez a program kiszámolja a diszkriminánst</span> <br>
+                <span style="color: #CC7832;">def </span><span style="color: #FFC66D;">diszkrim</span>(a<span style="color: #CC7832;">,</span> b<span style="color: #CC7832;">,</span> c): <br>
+                &nbsp &nbsp disz = <span style="color: #9876AA;">pow</span>(b<span style="color: #CC7832;">,</span> <span style="color: #6897BB;">2</span>) - <span style="color: #6897BB;">4</span> * a * c <br>
+                &nbsp &nbsp <span style="color: #9876AA;">print</span>(<span style="color: #6A8759;">'A számaid diszkriminánsa:'</span><span style="color: #CC7832;">,</span> disz) <br> <br> <br>
+                a = <span style="color: #9876AA;">int</span>(<span style="color: #9876AA;">input</span>(<span style="color: #6A8759;">'Add meg az A számot '</span>)) <br>
+                b = <span style="color: #9876AA;">int</span>(<span style="color: #9876AA;">input</span>(<span style="color: #6A8759;">'Add meg az B számot '</span>)) <br>
+                c = <span style="color: #9876AA;">int</span>(<span style="color: #9876AA;">input</span>(<span style="color: #6A8759;">'Add meg az C számot '</span>)) <br>
+                diszkrim(a<span style="color: #CC7832;">,</span> b<span style="color: #CC7832;">,</span> c) <br>
+            </div>
+        </p>
     </body>
 </html>
